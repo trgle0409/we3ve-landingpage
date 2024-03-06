@@ -15,6 +15,8 @@ npx tinacms dev -c "hugo server -D -p 1313"
 ```
 ### 👉 Access to Tina Admin
 
+Access to /admin in order to customize contents of homepage
+
 ```bash
 localhost:1313/admin/
 ```
