@@ -1,0 +1,6 @@
+################ German language ##################
+[de]
+languageName = "De"
+languageCode = "de"
+contentDir = "content/german/"
+weight = 1
