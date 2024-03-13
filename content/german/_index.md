@@ -13,7 +13,7 @@ banner:
   button:
     enable: true
     link: 'https://we3ve.de'
-    label: zu we3ve
+    label: zu we4ve
 features:
   - title: Erobere die Straßen mit we3ve Carsharing
     image: /images/We3ve-4.png
