@@ -1,8 +1,10 @@
 import { FieldDescription, defineConfig } from "tinacms";
-import { FeaturedIcons } from "../components/icons"
 
 // Your hosting provider likely exposes this as an environment variable
 export default defineConfig({
+  branch: "main",
+  clientId: "2533a7cc-abd3-44b2-b389-c10f67658823",
+  token: "ff93a6ee549aea2263fb44de0fdb61fe91bb78a4",
   build: {
     outputFolder: "admin",
     publicFolder: "content/german",
