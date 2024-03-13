@@ -39,7 +39,7 @@ features:
         Community-Vorteile: Werde Teil unserer Carsharing-Community und
         profitiere von exklusiven Angeboten, Events und gemeinsamen
         Fahrerlebnissen. Genieße die soziale Seite der Mobilität.
-  - title: 'Sicherheit nicht nur auf der Straße, sondern auch mit Ihren Datennnnnnn'
+  - title: 'Sicherheit nicht nur auf der Straße, sondern auch mit Ihren Daten'
     image: /images/homepageC3.png
     content: >
       Bei we3ve Carsharing liegt uns nicht nur Ihre Sicherheit am Herzen,
