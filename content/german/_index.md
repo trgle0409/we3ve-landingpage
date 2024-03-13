@@ -9,7 +9,7 @@ banner:
     Gesellschaft.
 
     Ihre Reise beginnt hier.
-  image: /We3ve-14.png
+  image: /images/We3ve-14.png
   button:
     enable: true
     link: 'https://we3ve.de'
@@ -49,7 +49,7 @@ features:
       werden.
     button:
       enable: true
-      link: we3ve.de
-      label: zu we3ve
+      link: 'https://we3ve.de'
+      label: zu we4ve
 ---
 

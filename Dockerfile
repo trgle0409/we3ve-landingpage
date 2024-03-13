@@ -1,5 +1,6 @@
 FROM node:latest AS build-env
 
+
 ARG BASE_URI
 
 RUN apt-get update \
@@ -17,10 +18,31 @@ RUN wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/
     && mv /tmp/hugo /usr/local/bin/hugo \
     && rm /tmp/hugo.tar.gz
 
-# Copy files to container and build
-RUN mkdir /app/
-COPY . /app/
-WORKDIR /app/
+WORKDIR /opt/HugoApp
+
+# Copy Hugo config into the container Workdir.
+COPY . .
+
+# Run Hugo in the Workdir to generate HTML.
+RUN hugo
+
+# Stage 2
+FROM nginx:1.25-alpine
+
+# Set workdir to the NGINX default dir.
+WORKDIR /usr/share/nginx/html
+
+# Copy HTML from previous build into the Workdir.
+COPY --from=build-env /opt/HugoApp/public .
+
+# Expose port 80
+EXPOSE 80/tcp
 
 # Run Hugo server
-RUN npx tinacms dev -c "hugo server -D -p 1313"
+#RUN npx tinacms dev -c "hugo server -D -p 1313"
+
+# Stage 2 - Create the run-time image
+#FROM nginx:mainline-alpine3.18-slim
+#COPY --from=build-env /app/build/web /usr/share/nginx/html
+
+
