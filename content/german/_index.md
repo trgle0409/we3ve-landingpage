@@ -50,6 +50,6 @@ features:
     button:
       enable: true
       link: 'https://we3ve.de'
-      label: zu we3ve
+      label: zu we4ve
 ---
 
